@@ -1,0 +1,288 @@
+###############################################################################
+# AI-Powered Enterprise Decision Systems — .gitignore
+# Comprehensive exclusion list for a Python + Flask + SQLite + JS project
+###############################################################################
+
+
+# ─────────────────────────────────────────────────────────────────────────────
+# PYTHON
+# ─────────────────────────────────────────────────────────────────────────────
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# PyInstaller
+*.manifest
+*.spec
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+pytest_cache/
+test-results/
+junit*.xml
+
+# Type checking
+.mypy_cache/
+.dmypy.json
+dmypy.json
+.pyre/
+.pytype/
+
+# profiling
+*.prof
+
+# ─────────────────────────────────────────────────────────────────────────────
+# VIRTUAL ENVIRONMENTS
+# ─────────────────────────────────────────────────────────────────────────────
+
+.venv/
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+.python-version
+Pipfile.lock
+poetry.lock
+
+# ─────────────────────────────────────────────────────────────────────────────
+# ENVIRONMENT & SECRETS
+# ─────────────────────────────────────────────────────────────────────────────
+
+.env
+.env.*
+!.env.example          # keep the template, ignore all real env files
+*.pem
+*.key
+*.p12
+*.pfx
+secrets/
+config/secrets.yaml
+config/secrets.json
+credentials.json
+service_account.json
+token.json
+
+# ─────────────────────────────────────────────────────────────────────────────
+# DATABASES & GENERATED DATA
+# ─────────────────────────────────────────────────────────────────────────────
+
+# SQLite databases (never commit the live DB)
+*.db
+*.db-shm
+*.db-wal
+*.sqlite
+*.sqlite3
+
+# Exported / generated files
+reports/
+exports/
+generated/
+*.zip            # zip archives (re-create via scripts)
+
+# CSV uploads / raw ingestion data (large or sensitive)
+data/uploads/
+data/raw/
+data/interim/
+
+# ML model artefacts (binaries, can be reproduced)
+models/
+*.pkl
+*.pickle
+*.joblib
+*.h5
+*.pt
+*.pth
+*.onnx
+*.pb
+
+# ─────────────────────────────────────────────────────────────────────────────
+# LOGS & MONITORING
+# ─────────────────────────────────────────────────────────────────────────────
+
+logs/
+*.log
+*.log.*
+*.out
+*.err
+celery-*.log
+gunicorn*.log
+flask-*.log
+access.log
+error.log
+
+# ─────────────────────────────────────────────────────────────────────────────
+# FLASK / WSGI
+# ─────────────────────────────────────────────────────────────────────────────
+
+instance/
+flask_session/
+.flask_cache/
+*.wsgi
+gunicorn.pid
+uwsgi.pid
+
+# ─────────────────────────────────────────────────────────────────────────────
+# STREAMLIT
+# ─────────────────────────────────────────────────────────────────────────────
+
+.streamlit/secrets.toml
+.streamlit/credentials.toml
+
+# ─────────────────────────────────────────────────────────────────────────────
+# JAVASCRIPT / NODE (for any future JS tooling)
+# ─────────────────────────────────────────────────────────────────────────────
+
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+.npm/
+.yarn/
+dist/
+.parcel-cache/
+.next/
+.nuxt/
+.output/
+.vite/
+
+# ─────────────────────────────────────────────────────────────────────────────
+# IDEs & EDITORS
+# ─────────────────────────────────────────────────────────────────────────────
+
+# VS Code
+.vscode/
+!.vscode/extensions.json   # optionally share recommended extensions
+!.vscode/settings.json.example
+
+# JetBrains (PyCharm, WebStorm, etc.)
+.idea/
+*.iml
+*.iws
+*.ipr
+out/
+.idea_modules/
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# Vim / Neovim
+*.swp
+*.swo
+*~
+Session.vim
+
+# Emacs
+*~
+\#*\#
+/.emacs.d/
+auto-save-list
+
+# ─────────────────────────────────────────────────────────────────────────────
+# OPERATING SYSTEM
+# ─────────────────────────────────────────────────────────────────────────────
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.Spotlight-V100
+.Trashes
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+Desktop.ini
+$RECYCLE.BIN/
+*.lnk
+
+# Linux
+*~
+
+# ─────────────────────────────────────────────────────────────────────────────
+# DOCKER / CONTAINERS
+# ─────────────────────────────────────────────────────────────────────────────
+
+.docker/
+docker-compose.override.yml
+.dockerignore.local
+
+# ─────────────────────────────────────────────────────────────────────────────
+# CI/CD
+# ─────────────────────────────────────────────────────────────────────────────
+
+.github/workflows/secrets/
+.circleci/config.local.yml
+
+# ─────────────────────────────────────────────────────────────────────────────
+# MISCELLANEOUS
+# ─────────────────────────────────────────────────────────────────────────────
+
+# Temporary files
+*.tmp
+*.temp
+*.bak
+*.orig
+*.retry
+
+# Jupyter Notebooks (if any)
+.ipynb_checkpoints/
+*.ipynb
+
+# Documentation build output
+docs/_build/
+site/
+
+# Patch files
+*.patch
+*.diff
+
+###############################################################################
+# END OF .gitignore
+###############################################################################
+AI_Powered_Enterprise_Decision_Systems.zip

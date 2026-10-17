@@ -1,0 +1,717 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI-Powered Enterprise Decision System | Consulting Analytics</title>
+    
+    <!-- Modern Corporate & Data Typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Chart.js Engine -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+    
+    <!-- Executive Styling -->
+    <link rel="stylesheet" href="/static/css/styles.css">
+</head>
+<body>
+
+<div class="app-container">
+    <!-- ==================== SIDEBAR ==================== -->
+    <aside class="sidebar">
+        <div class="brand-header">
+            <div class="brand-logo-wrap">
+                <div class="brand-icon">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                        <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+                    </svg>
+                </div>
+                <div class="brand-text">
+                    <h2>AI DECISION SYS</h2>
+                    <span>Enterprise Suite</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="nav-section-title">Strategic Domains</div>
+        <ul class="nav-menu">
+            <li class="nav-item active">
+                <a href="#" class="nav-link" data-target="overview-tab">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect></svg>
+                    <span>Command Center</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link" data-target="sales-tab">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline><polyline points="17 6 23 6 23 12"></polyline></svg>
+                    <span>Sales Forecasting</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link" data-target="churn-tab">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+                    <span>Customer Churn</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link" data-target="inventory-tab">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="16.5" y1="9.4" x2="7.5" y2="4.21"></line><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path><polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline><line x1="12" y1="22.08" x2="12" y2="12"></line></svg>
+                    <span>Inventory Supply</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link" data-target="risk-tab">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+                    <span>Financial Risk Shield</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link" data-target="real-world-tab">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+                    <span>Real-World Verticals</span>
+                </a>
+            </li>
+
+            <div class="nav-section-title">Governance & Systems</div>
+            <li class="nav-item">
+                <a href="#" class="nav-link" data-target="governance-tab">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+                    <span>Human Review Desk</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link" data-target="benchmarks-tab">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                    <span>Latency Benchmarks</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link" data-target="database-tab">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><ellipse cx="12" cy="5" rx="9" ry="3"></ellipse><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path></svg>
+                    <span>SQLite Studio (15 Tables)</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link" data-target="reports-tab">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg>
+                    <span>Boardroom Briefings</span>
+                </a>
+            </li>
+        </ul>
+
+        <div class="sidebar-footer">
+            <div class="db-status-pill">
+                <div class="status-dot"></div>
+                <span>SQLite 3 ACID Connected</span>
+            </div>
+            <div class="author-tag">
+                Lead: <b>Rayala Dheeraj Kumar</b><br>
+                ICFAI Tech • 24STUCHH010133
+            </div>
+        </div>
+    </aside>
+
+    <!-- ==================== MAIN CONTENT ==================== -->
+    <main class="main-wrapper">
+        <!-- Top App Bar -->
+        <header class="top-header">
+            <div class="header-left">
+                <h1 id="current-page-title">Executive Command Center</h1>
+                <p>AI-Powered Autonomous Decision Intelligence & Strategic Consulting Suite</p>
+            </div>
+            <div class="header-right">
+                <span class="badge-tag">Hybrid ML + Rules</span>
+                <span class="badge-tag" style="color: var(--accent-emerald); border-color: rgba(52, 211, 153, 0.3);">XAI Certified</span>
+                <a href="/api/reports/pdf" class="action-btn" download>
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+                    Export Board PDF
+                </a>
+            </div>
+        </header>
+
+        <div class="page-content">
+            
+            <!-- TAB 1: EXECUTIVE COMMAND CENTER -->
+            <section id="overview-tab" class="tab-pane active">
+                <div class="kpi-grid">
+                    <div class="card kpi-card">
+                        <div class="card-label">30-Day Revenue Projection</div>
+                        <div class="card-value" id="kpi-revenue">₹1.85 Cr</div>
+                        <div class="card-delta delta-green">▲ +12.4% vs Previous Cycle</div>
+                    </div>
+                    <div class="card kpi-card">
+                        <div class="card-label">Annual At-Risk Churn Value</div>
+                        <div class="card-value" id="kpi-churn" style="color: var(--accent-rose);">₹42.8 Lakhs</div>
+                        <div class="card-delta delta-rose">61 Accounts in Critical Zone</div>
+                    </div>
+                    <div class="card kpi-card">
+                        <div class="card-label">Immediate PO CapEx Needed</div>
+                        <div class="card-value" id="kpi-capex" style="color: var(--accent-amber);">₹18.4 Lakhs</div>
+                        <div class="card-delta delta-amber">8 of 12 SKUs Triggered</div>
+                    </div>
+                    <div class="card kpi-card">
+                        <div class="card-label">Mandatory Audit Reviews</div>
+                        <div class="card-value" id="kpi-reviews" style="color: var(--accent-indigo);">23 Events</div>
+                        <div class="card-delta delta-blue">100% Policy-Governed</div>
+                    </div>
+                </div>
+
+                <div class="section-grid">
+                    <div class="card">
+                        <div class="card-header">
+                            <div>
+                                <h3 class="card-title">Priority Prescriptive Decision Cards</h3>
+                                <div class="card-subtitle">Synthesized from Sales, CRM, Supply Chain, and Anomaly Engines</div>
+                            </div>
+                            <span class="chip chip-info">Real-Time Inferences</span>
+                        </div>
+                        <div id="overview-recs-container">
+                            <!-- Dynamic Recommendation Cards loaded via JS -->
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-header">
+                            <div>
+                                <h3 class="card-title">Customer Churn Exposure</h3>
+                                <div class="card-subtitle">Risk Distribution across 350 Enterprise Accounts</div>
+                            </div>
+                        </div>
+                        <div style="height: 260px; position: relative;">
+                            <canvas id="churnDonutChart"></canvas>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- TAB 2: SALES FORECASTING -->
+            <section id="sales-tab" class="tab-pane">
+                <div class="kpi-grid">
+                    <div class="card kpi-card">
+                        <div class="card-label">Projected Sales Units</div>
+                        <div class="card-value" id="sales-total-units">1,420</div>
+                        <div class="card-delta delta-green">Forecast Volume</div>
+                    </div>
+                    <div class="card kpi-card">
+                        <div class="card-label">Topline Revenue Proj.</div>
+                        <div class="card-value" id="sales-total-rev" style="color: var(--accent-blue);">₹1.85 Cr</div>
+                        <div class="card-delta delta-green">Across 4 Product Lines</div>
+                    </div>
+                    <div class="card kpi-card">
+                        <div class="card-label">Mean Absolute Error</div>
+                        <div class="card-value" id="sales-mae">1.82 units</div>
+                        <div class="card-delta delta-blue">Cross-Validated</div>
+                    </div>
+                    <div class="card kpi-card">
+                        <div class="card-label">R² Variance Score</div>
+                        <div class="card-value" id="sales-r2" style="color: var(--accent-emerald);">0.894</div>
+                        <div class="card-delta delta-green">High Confidence Fit</div>
+                    </div>
+                </div>
+
+                <div class="section-grid">
+                    <div class="card">
+                        <div class="card-header">
+                            <div>
+                                <h3 class="card-title">Demand Forecast with P10/P90 Confidence Intervals</h3>
+                                <div class="card-subtitle">Random Forest Regressor with Seasonality & Promotional Elasticity</div>
+                            </div>
+                        </div>
+                        <div style="height: 320px;">
+                            <canvas id="salesForecastChart"></canvas>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-header">
+                            <div>
+                                <h3 class="card-title">Interactive What-If Strategy Playground</h3>
+                                <div class="card-subtitle">Simulate Budget & Promo Adjustments</div>
+                            </div>
+                        </div>
+                        <div class="slider-group">
+                            <label>Marketing Budget Boost: <span id="mkt-boost-val">+0%</span></label>
+                            <input type="range" id="sales-mkt-boost" min="-40" max="100" value="0" step="5" oninput="loadSalesForecast()">
+                        </div>
+                        <div class="slider-group">
+                            <label>Campaign Active Days: <span id="promo-days-val">4 Days</span></label>
+                            <input type="range" id="sales-promo-days" min="0" max="14" value="4" step="1" oninput="loadSalesForecast()">
+                        </div>
+                        <div class="slider-group">
+                            <label>Forecast Horizon</label>
+                            <select id="sales-horizon" class="form-control" onchange="loadSalesForecast()">
+                                <option value="14">14 Days (Short Horizon)</option>
+                                <option value="30" selected>30 Days (Standard Monthly)</option>
+                                <option value="60">60 Days (Strategic Quarter)</option>
+                            </select>
+                        </div>
+                        <button class="action-btn" style="width: 100%; justify-content: center; margin-top: 10px;" onclick="saveCurrentScenario()">
+                            💾 Save Scenario to SQLite Database
+                        </button>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header">
+                        <h3 class="card-title">Projected Revenue by Product Category</h3>
+                    </div>
+                    <div style="height: 220px;">
+                        <canvas id="salesCategoryChart"></canvas>
+                    </div>
+                </div>
+            </section>
+
+            <!-- TAB 3: CUSTOMER CHURN -->
+            <section id="churn-tab" class="tab-pane">
+                <div class="kpi-grid">
+                    <div class="card kpi-card">
+                        <div class="card-label">Classifier Precision</div>
+                        <div class="card-value" id="churn-precision">91.4%</div>
+                        <div class="card-delta delta-green">Balanced Class Weights</div>
+                    </div>
+                    <div class="card kpi-card">
+                        <div class="card-label">Classifier Recall</div>
+                        <div class="card-value" id="churn-recall">88.2%</div>
+                        <div class="card-delta delta-green">High Attrition Capture</div>
+                    </div>
+                    <div class="card kpi-card">
+                        <div class="card-label">F1-Score</div>
+                        <div class="card-value" id="churn-f1" style="color: var(--accent-indigo);">0.898</div>
+                        <div class="card-delta delta-blue">Harsh Stratified Test</div>
+                    </div>
+                    <div class="card kpi-card">
+                        <div class="card-label">At-Risk Annual Contract Exposure</div>
+                        <div class="card-value" id="churn-at-risk-val" style="color: var(--accent-rose);">₹42.8 Lakhs</div>
+                        <div class="card-delta delta-rose">Requires CS Intervention</div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header">
+                        <div>
+                            <h3 class="card-title">Priority Customer Retention & Churn Outreach Desk</h3>
+                            <div class="card-subtitle">Scored via Random Forest Classifier with RFM Metrics & Prescriptive Playbooks</div>
+                        </div>
+                    </div>
+                    <div class="table-responsive">
+                        <table class="enterprise-table">
+                            <thead>
+                                <tr>
+                                    <th>Account ID</th>
+                                    <th>Client Enterprise</th>
+                                    <th>Segment</th>
+                                    <th>Contract</th>
+                                    <th>Monthly Billing</th>
+                                    <th>Support Tickets (30d)</th>
+                                    <th>Churn Risk</th>
+                                    <th>Prescribed Retention Playbook</th>
+                                    <th>Action</th>
+                                </tr>
+                            </thead>
+                            <tbody id="churn-table-body">
+                                <!-- Populated dynamically -->
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </section>
+
+            <!-- TAB 4: INVENTORY OPTIMIZATION -->
+            <section id="inventory-tab" class="tab-pane">
+                <div class="kpi-grid">
+                    <div class="card kpi-card">
+                        <div class="card-label">Monitored SKUs</div>
+                        <div class="card-value" id="inv-skus-count">12</div>
+                        <div class="card-delta delta-blue">Full Enterprise Catalog</div>
+                    </div>
+                    <div class="card kpi-card">
+                        <div class="card-label">Reorder Triggers</div>
+                        <div class="card-value" id="inv-triggered-count" style="color: var(--accent-amber);">8 SKUs</div>
+                        <div class="card-delta delta-amber">Dynamic ROP Crossed</div>
+                    </div>
+                    <div class="card kpi-card">
+                        <div class="card-label">Stockout Risk Window</div>
+                        <div class="card-value" id="inv-stockout-risk" style="color: var(--accent-rose);">2 SKUs</div>
+                        <div class="card-delta delta-rose">Stock &lt; Lead Demand</div>
+                    </div>
+                    <div class="card kpi-card">
+                        <div class="card-label">Purchase Order CapEx</div>
+                        <div class="card-value" id="inv-capex-required" style="color: var(--accent-emerald);">₹18.4 Lakhs</div>
+                        <div class="card-delta delta-green">Optimized EOQ Sizing</div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header">
+                        <div>
+                            <h3 class="card-title">Dynamic Reorder Planning & Economic Order Quantity (EOQ)</h3>
+                            <div class="card-subtitle">Grounded in Banda (2024) & Rakholia et al. (2024) Inventory Optimization Models</div>
+                        </div>
+                    </div>
+                    <div class="table-responsive">
+                        <table class="enterprise-table">
+                            <thead>
+                                <tr>
+                                    <th>SKU</th>
+                                    <th>Product Name</th>
+                                    <th>Stock</th>
+                                    <th>Daily Burn</th>
+                                    <th>Safety Stock (Z=1.96)</th>
+                                    <th>Dynamic ROP</th>
+                                    <th>EOQ Batch</th>
+                                    <th>Recommended PO</th>
+                                    <th>CapEx (₹)</th>
+                                    <th>Stock Status</th>
+                                    <th>Action</th>
+                                </tr>
+                            </thead>
+                            <tbody id="inventory-table-body">
+                                <!-- Populated dynamically -->
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </section>
+
+            <!-- TAB 5: FINANCIAL RISK & FRAUD -->
+            <section id="risk-tab" class="tab-pane">
+                <div class="kpi-grid">
+                    <div class="card kpi-card">
+                        <div class="card-label">Anomaly Precision</div>
+                        <div class="card-value" id="risk-precision">94.2%</div>
+                        <div class="card-delta delta-green">Low False Positives</div>
+                    </div>
+                    <div class="card kpi-card">
+                        <div class="card-label">Anomaly Recall</div>
+                        <div class="card-value" id="risk-recall">100.0%</div>
+                        <div class="card-delta delta-green">Zero Fraud Leaks</div>
+                    </div>
+                    <div class="card kpi-card">
+                        <div class="card-label">Ensemble F1-Score</div>
+                        <div class="card-value" id="risk-f1" style="color: var(--accent-indigo);">0.970</div>
+                        <div class="card-delta delta-blue">Talukder et al. (2024)</div>
+                    </div>
+                    <div class="card kpi-card">
+                        <div class="card-label">Mandatory Review Queue</div>
+                        <div class="card-value" id="risk-queue-count" style="color: var(--accent-rose);">23 Txns</div>
+                        <div class="card-delta delta-rose">Held for Human Sign-off</div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header">
+                        <div>
+                            <h3 class="card-title">Transaction Anomaly Screening & Mandatory Adjudication Queue</h3>
+                            <div class="card-subtitle">Hybrid Ensemble Model + Statutory Review Caps (&gt;₹10,000, Off-Hours, Velocity)</div>
+                        </div>
+                    </div>
+                    <div class="table-responsive">
+                        <table class="enterprise-table">
+                            <thead>
+                                <tr>
+                                    <th>Txn ID</th>
+                                    <th>Amount</th>
+                                    <th>Hour</th>
+                                    <th>24h Velocity</th>
+                                    <th>ML Fraud Prob</th>
+                                    <th>Hybrid Score</th>
+                                    <th>Decision Status</th>
+                                    <th>Explainability Rationale</th>
+                                    <th>Action</th>
+                                </tr>
+                            </thead>
+                            <tbody id="risk-table-body">
+                                <!-- Populated dynamically -->
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </section>
+
+            <!-- TAB: REAL-WORLD INDUSTRY VERTICALS -->
+            <section id="real-world-tab" class="tab-pane">
+                <div class="card" style="margin-bottom: 20px;">
+                    <div class="card-header">
+                        <div>
+                            <h3 class="card-title">🌍 Real-World Global Enterprise Industry Applications</h3>
+                            <div class="card-subtitle">Grounding the AI Decision System in authentic Fortune 500 company architectures across 5 global sectors</div>
+                        </div>
+                        <span class="chip chip-info">Slide 8-12 Academic Precedents</span>
+                    </div>
+
+                    <!-- Sector Selector Bar -->
+                    <div class="industry-nav" id="industry-selector-bar">
+                        <button class="industry-btn active" data-ind="fintech" onclick="switchRealWorldIndustry('fintech')">💳 Banking & FinTech (JPMorgan / Stripe)</button>
+                        <button class="industry-btn" data-ind="retail" onclick="switchRealWorldIndustry('retail')">🛍️ Global Retail (Amazon / Walmart)</button>
+                        <button class="industry-btn" data-ind="saas" onclick="switchRealWorldIndustry('saas')">☁️ Enterprise SaaS (Salesforce / Snowflake)</button>
+                        <button class="industry-btn" data-ind="healthcare" onclick="switchRealWorldIndustry('healthcare')">🏥 Healthcare Operations (Mayo Clinic / NHS)</button>
+                        <button class="industry-btn" data-ind="manufacturing" onclick="switchRealWorldIndustry('manufacturing')">🏭 Smart Industry 4.0 (Siemens / Tesla)</button>
+                    </div>
+
+                    <!-- Strategic Industry Dossier -->
+                    <div class="dossier-card" id="industry-dossier-card">
+                        <div style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap;">
+                            <div>
+                                <span class="rec-badge" id="dossier-badge" style="background: rgba(56, 189, 248, 0.2); color: var(--accent-blue); border: 1px solid var(--accent-blue);">FINANCIAL SERVICES</span>
+                                <h2 style="font-family: var(--font-heading); font-size: 20px; color: #fff; margin-top: 6px;" id="dossier-name">Financial Services & Banking</h2>
+                                <p style="font-size: 13px; color: var(--text-secondary); margin-top: 4px;" id="dossier-desc">Real-time scoring of loan applications and transaction anomalies, balancing rapid credit approvals with hard capital reserve constraints.</p>
+                            </div>
+                            <div style="text-align: right;">
+                                <div style="font-size: 11px; color: var(--text-muted);">Company Archetype</div>
+                                <div style="font-size: 14px; font-weight: 700; color: var(--accent-emerald);" id="dossier-archetype">JPMorgan Chase / Stripe / Visa Archetype</div>
+                            </div>
+                        </div>
+
+                        <div class="dossier-grid">
+                            <div class="dossier-item">
+                                <div class="d-label">Core Business Use Case</div>
+                                <div class="d-val" id="dossier-usecase">Instant Automated Loan Underwriting & High-Speed Fraud Screening</div>
+                            </div>
+                            <div class="dossier-item">
+                                <div class="d-label">AI / ML Model Pipeline</div>
+                                <div class="d-val" id="dossier-model">Cost-Sensitive Gradient Boosting + Basel III Compliance Rules</div>
+                            </div>
+                            <div class="dossier-item">
+                                <div class="d-label">Regulatory Framework</div>
+                                <div class="d-val" id="dossier-reg">FinCEN • Basel III • FCRA • Fair Lending Regulations</div>
+                            </div>
+                            <div class="dossier-item">
+                                <div class="d-label">Measured Enterprise ROI</div>
+                                <div class="d-val" style="color: var(--accent-emerald);" id="dossier-roi">42% Reduction in Manual Underwriting Cost; 99.4% Fraud Interception</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Industry Operational Decision Stream -->
+                    <div class="card-header">
+                        <div>
+                            <h3 class="card-title" id="industry-stream-title">Real-Time Commercial Loan Applications & Underwriting Queue</h3>
+                            <div class="card-subtitle" id="industry-stream-subtitle">Underwriting decisions evaluated against credit score, DTI, liquid revenue, and Basel III risk gates</div>
+                        </div>
+                        <span class="chip chip-success" id="industry-records-count">100 Live Records</span>
+                    </div>
+
+                    <div class="table-responsive">
+                        <table class="enterprise-table">
+                            <thead id="real-world-table-head">
+                                <!-- Populated dynamically -->
+                            </thead>
+                            <tbody id="real-world-table-body">
+                                <!-- Populated dynamically -->
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </section>
+
+            <!-- TAB 6: HUMAN GOVERNANCE DESK -->
+            <section id="governance-tab" class="tab-pane">
+                <div class="card" style="margin-bottom: 24px;">
+                    <div class="card-header">
+                        <div>
+                            <h3 class="card-title">Socio-Technical Human Oversight Framework (Lu et al., 2025)</h3>
+                            <div class="card-subtitle">Operationalizing responsible AI governance: Routine decisions automated, high-risk actions locked for human authorization</div>
+                        </div>
+                    </div>
+                    <p style="color: var(--text-secondary); font-size: 13px;">
+                        The system prohibits autonomous commitment of high-value disbursements or material procurement contracts. Any event crossing statutory thresholds (e.g., &gt; ₹10,000 or high-risk anomaly probability) requires a named human reviewer, written justification, and recorded timestamp stored immutably in SQLite.
+                    </p>
+                </div>
+
+                <div class="card">
+                    <div class="card-header">
+                        <h3 class="card-title">Immutable SQLite Decision Audit Ledger (`human_review_log`)</h3>
+                    </div>
+                    <div class="table-responsive">
+                        <table class="enterprise-table">
+                            <thead>
+                                <tr>
+                                    <th>Audit ID</th>
+                                    <th>Module Domain</th>
+                                    <th>Reference ID</th>
+                                    <th>Decision Action</th>
+                                    <th>Reviewer Identity</th>
+                                    <th>Compliance Rationale</th>
+                                    <th>Timestamp</th>
+                                </tr>
+                            </thead>
+                            <tbody id="audit-table-body">
+                                <!-- Populated dynamically -->
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </section>
+
+            <!-- TAB 7: LATENCY BENCHMARKS -->
+            <section id="benchmarks-tab" class="tab-pane">
+                <div class="card" style="margin-bottom: 24px;">
+                    <div class="card-header">
+                        <div>
+                            <h3 class="card-title">Empirical Architecture Benchmark (Report Chapter 3.5 & Deng et al., 2025)</h3>
+                            <div class="card-subtitle">Directly comparing Traditional Rule-Based Bots vs Pure ML vs Explainable Hybrid AI-DSS</div>
+                        </div>
+                    </div>
+                    <div class="table-responsive">
+                        <table class="enterprise-table">
+                            <thead>
+                                <tr>
+                                    <th>Architecture Layer</th>
+                                    <th>Accuracy</th>
+                                    <th>Precision</th>
+                                    <th>Recall</th>
+                                    <th>F1-Score</th>
+                                    <th>Decision Latency (Wall-Clock)</th>
+                                    <th>Oversight Model</th>
+                                </tr>
+                            </thead>
+                            <tbody id="benchmarks-table-body">
+                                <!-- Populated dynamically -->
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </section>
+
+            <!-- TAB 8: SQLITE STUDIO -->
+            <section id="database-tab" class="tab-pane">
+                <div class="kpi-grid">
+                    <div class="card kpi-card">
+                        <div class="card-label">Active Tables in SQLite</div>
+                        <div class="card-value" id="db-total-tables">15</div>
+                        <div class="card-delta delta-blue">ACID Relational Storage</div>
+                    </div>
+                    <div class="card kpi-card">
+                        <div class="card-label">Total Persisted Records</div>
+                        <div class="card-value" id="db-total-records">4,592</div>
+                        <div class="card-delta delta-green">100% In-Database</div>
+                    </div>
+                    <div class="card kpi-card">
+                        <div class="card-label">Database File Location</div>
+                        <div class="card-value" style="font-size: 15px; font-family: var(--font-mono);">enterprise_decision_system.db</div>
+                        <div class="card-delta delta-blue">Local High-Speed SQLite</div>
+                    </div>
+                    <div class="card kpi-card">
+                        <div class="card-label">Query Engine</div>
+                        <div class="card-value" style="font-size: 18px; color: var(--accent-emerald);">Live SQL Console</div>
+                        <div class="card-delta delta-green">Zero Data Lag</div>
+                    </div>
+                </div>
+
+                <div class="section-grid equal">
+                    <div class="card">
+                        <div class="card-header">
+                            <h3 class="card-title">💻 Live SQL Query Console</h3>
+                            <span id="query-execution-stat" style="font-size: 11px; color: var(--accent-emerald);"></span>
+                        </div>
+                        <div class="sql-console">
+                            <textarea id="sql-query-input" class="sql-textarea">SELECT product_category, SUM(forecast_units) as total_units, ROUND(SUM(projected_revenue), 2) as total_rev FROM ai_sales_forecasts GROUP BY product_category;</textarea>
+                        </div>
+                        <button class="action-btn" onclick="executeCustomQuery()">▶️ Execute Query Live</button>
+                        
+                        <div class="table-responsive" style="margin-top: 16px; max-height: 250px;">
+                            <table class="enterprise-table">
+                                <thead id="query-result-head"></thead>
+                                <tbody id="query-result-body"></tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-header">
+                            <h3 class="card-title">📋 15-Table Live Data Browser</h3>
+                        </div>
+                        <div class="form-group">
+                            <label>Select Table to Inspect</label>
+                            <select id="db-table-selector" class="form-control" onchange="loadSelectedTableData(this.value)"></select>
+                        </div>
+                        <div class="table-responsive" style="max-height: 320px;">
+                            <table class="enterprise-table">
+                                <thead id="db-browser-head"></thead>
+                                <tbody id="db-browser-body"></tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- TAB 9: BOARDROOM REPORTS -->
+            <section id="reports-tab" class="tab-pane">
+                <div class="section-grid equal">
+                    <div class="card">
+                        <div class="card-header">
+                            <div>
+                                <h3 class="card-title">📄 Executive Boardroom Advisory Report (PDF)</h3>
+                                <div class="card-subtitle">Formal publication-grade vector deliverable generated with ReportLab</div>
+                            </div>
+                        </div>
+                        <p style="color: var(--text-secondary); margin-bottom: 20px;">
+                            Includes executive C-suite KPI snapshots, multi-domain diagnostic briefings (Sales, Churn, Inventory, Financial Risk), prioritized prescriptive action matrices, and the complete Coussement et al. (2024) XAI Governance Statement.
+                        </p>
+                        <a href="/api/reports/pdf" class="action-btn" style="text-decoration: none;" download>
+                            📥 Download Formal Advisory PDF Deliverable
+                        </a>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-header">
+                            <div>
+                                <h3 class="card-title">🌐 Standalone Boardroom HTML Briefing</h3>
+                                <div class="card-subtitle">Self-contained presentation document ready for executive meetings</div>
+                            </div>
+                        </div>
+                        <p style="color: var(--text-secondary); margin-bottom: 20px;">
+                            Responsive HTML executive summary formatted with live dark styling, KPI cards, decision gates, and audit notes. Can be sent as an email briefing or opened directly in any browser.
+                        </p>
+                        <a href="/api/overview" target="_blank" class="action-btn secondary" style="text-decoration: none; margin-right: 10px;">
+                            Inspect Live JSON Telemetry
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+    </main>
+</div>
+
+<!-- ==================== HUMAN-IN-THE-LOOP REVIEW MODAL ==================== -->
+<div id="review-modal" class="modal-overlay">
+    <div class="modal-content">
+        <div class="modal-header">
+            <div>
+                <h3>Human Decision Sign-off Gate</h3>
+                <div style="font-size: 11px; color: var(--accent-blue);" id="modal-ref-id">TXN-100088</div>
+            </div>
+            <button class="close-modal" onclick="closeReviewModal()">&times;</button>
+        </div>
+        <p style="font-size: 13px; color: var(--text-secondary); margin-bottom: 16px;" id="modal-ref-title"></p>
+        
+        <input type="hidden" id="review-ref-input">
+        
+        <div class="form-group">
+            <label>Reviewer Name / Title</label>
+            <input type="text" id="review-name-input" class="form-control" value="Rayala Dheeraj Kumar (Lead Consultant)">
+        </div>
+        <div class="form-group">
+            <label>Written Compliance Rationale (Mandatory per Section 2.4.2)</label>
+            <textarea id="review-notes-input" class="form-control" rows="3" placeholder="State operational verification rationale for compliance record..."></textarea>
+        </div>
+        
+        <div style="display: flex; gap: 10px; margin-top: 20px;">
+            <button class="action-btn" style="flex: 1; justify-content: center; background: linear-gradient(135deg, #059669, #10b981);" onclick="submitReviewDecision('Approved')">Authorize / Approve</button>
+            <button class="action-btn" style="flex: 1; justify-content: center; background: linear-gradient(135deg, #dc2626, #ef4444);" onclick="submitReviewDecision('Rejected')">Reject / Block</button>
+            <button class="action-btn secondary" style="flex: 1; justify-content: center;" onclick="submitReviewDecision('Overridden')">Override Flag</button>
+        </div>
+    </div>
+</div>
+
+<!-- Notification Toast Container -->
+<div id="toast-container"></div>
+
+<!-- Controller Script -->
+<script src="/static/js/app.js"></script>
+
+</body>
+</html>
