@@ -197,8 +197,8 @@ st.markdown("""
         </div>
         <div style="text-align: right; margin-top: 10px;">
             <div style="font-size: 12px; color: #94a3b8;">Client Prototype Deployment</div>
-            <div style="font-size: 13px; font-weight: 700; color: #38bdf8;">Rayala Dheeraj Kumar</div>
-            <div style="font-size: 11px; color: #64748b;">ICFAI Tech • 24STUCHH010133</div>
+            <div style="font-size: 13px; font-weight: 700; color: #38bdf8;"></div>
+            <div style="font-size: 11px; color: #64748b;"></div>
         </div>
     </div>
 </div>
